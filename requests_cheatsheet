@@ -1,0 +1,27 @@
+import requests as req
+
+req.get().json()
+req.get().status_code
+req.get().content
+req.get().text
+req.get().encoding
+req.get().headers
+req.get().url
+req.get().history
+req.get().cookies[cookie_name]
+req.Session().get(link)
+req.Session().get(link).text
+
+req.get(link, params=json_params, timeout=number_seconds, timeout = (connect_timeout, read_timeout), cookies= custom_cookie, headers = json_header, verify = ssl_boolean, stream= boolean)
+req.post('link', data=json_params, files=file_list)
+req.put('url', data=json_params)
+req.delete('url')
+req.head('url')
+req.options('url')
+req.Session()
+
+requests.exceptions.RequestExceptions:
+- ConnectionError
+- Timeout
+- TooManyRedirects
+- HTTPError exception is raised for invalid HTTP responses.
