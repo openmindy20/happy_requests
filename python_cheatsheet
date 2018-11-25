@@ -1,0 +1,10 @@
+#################### datetime ####################
+### Convert timestamp to datetime
+import datetime as dt
+m_datetime = dt.datetime.fromtimestamp(m_timestamp)
+
+### Create a datetime from a String
+dt.datetime.strptime('2011/04/01 16:08:18', "%Y/%m/%d %H:%M:%S")
+
+### Number of days between 2 datetimes
+m_datetime_diff = (m_datetime_2 - m_datetime_1).days
