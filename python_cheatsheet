@@ -8,3 +8,7 @@ dt.datetime.strptime('2011/04/01 16:08:18', "%Y/%m/%d %H:%M:%S")
 
 ### Number of days between 2 datetimes
 m_datetime_diff = (m_datetime_2 - m_datetime_1).days
+
+#################### regex ####################
+### Find all set of characters that respect a format
+re.findall(r"{[^{}]*}", talk_rating)
