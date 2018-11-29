@@ -12,3 +12,10 @@ m_datetime_diff = (m_datetime_2 - m_datetime_1).days
 #################### regex ####################
 ### Find all set of characters that respect a format
 re.findall(r"{[^{}]*}", talk_rating)
+
+#################### python ####################
+# if a variable in list
+sample = ['one', 'two', 'three', 'four']
+if 'four' in sample:
+   print True
+
