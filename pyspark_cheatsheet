@@ -1,3 +1,7 @@
 ######## Filtering ########
 # Filter by list
 df = df.filter(df['county'].isin(list_counties))
+
+######## Grouping By ########
+# Grouping by Count and Mean
+df = df.groupby('county').agg(count("is_third_event_ad_view").alias('number of sessions'), mean("is_third_event_ad_view").alias('average_is_third_event_ad_view'))
