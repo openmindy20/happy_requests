@@ -1,0 +1,2 @@
+########## Join ##############
+df = df_1.merge(right=df_2, how='inner', on =['county'])
