@@ -1,0 +1,3 @@
+######## Filtering ########
+# Filter by list
+df = df.filter(df['county'].isin(list_counties))
