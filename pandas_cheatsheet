@@ -1,2 +1,7 @@
 ########## Join ##############
 df = df_1.merge(right=df_2, how='inner', on =['county'])
+
+
+######### Conditions, Filtering ########
+# Not in a list
+df_2 = df_2[df_2.county.isin(['uppsala','halland'])==False]
