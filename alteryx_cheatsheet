@@ -16,6 +16,10 @@ It allows to visualize the results of the transformation
 #### Join Tool ####
 Join datasets on a column
 
+
+#### Text Input Tool ####
+The Text Input tool makes it possible for the user to manually type text to create small data files for input.
+
 #### Definitions ####
 Controller: The Alteryx Service Controller is responsible for the management of the service settings and the delegation of work to the Alteryx Service Workers.
 
