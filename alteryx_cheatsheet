@@ -4,4 +4,15 @@ This tool will correctly assign integer or string data types to the different co
 #### Select Tool ####
 Allows to select and rename the columns
 
+#### Formulas ####
+Allows to both create new columns or modify columns through a set of Alteryx functions.
+
+#### Summarize Tool ####
+It allows to do group by
+
+#### Browse Tool ####
+It allows to visualize the results of the transformation
+
+#### Join Tool ####
+Join datasets on a column
 
