@@ -13,6 +13,9 @@ m_datetime_diff = (m_datetime_2 - m_datetime_1).days
 ### Find all set of characters that respect a format
 re.findall(r"{[^{}]*}", talk_rating)
 
+### Find if a text fully matches a pattern
+re.fullmatch(r'https://www.blocket.se/hela_sverige\?ca=[1-9]{1,2}&w=3', x[1].split(' - ')[2])
+
 #################### python ####################
 # if a variable in list
 sample = ['one', 'two', 'three', 'four']
