@@ -16,6 +16,10 @@ re.findall(r"{[^{}]*}", talk_rating)
 ### Find if a text fully matches a pattern
 re.fullmatch(r'https://www.blocket.se/hela_sverige\?ca=[1-9]{1,2}&w=3', x[1].split(' - ')[2])
 
+### Find if a text contains a pattern
+text = "https://www.blocket.se/hela_sverige?q=testäöåp+teståö&cg=0&w=3&st=s&c=&ca=11&is=1&l=0&md=th"
+print(re.search(r'\?q=[\w+ÅåÄäÖöÆæØø]+&', text) is not None)
+
 ### Special characters
 Within brackets only some special characters are considered as so and thus should be escaped also within brackets: '#'  ']'  '-'
 
