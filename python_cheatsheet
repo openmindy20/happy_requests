@@ -17,7 +17,7 @@ re.findall(r"{[^{}]*}", talk_rating)
 re.fullmatch(r'https://www.blocket.se/hela_sverige\?ca=[1-9]{1,2}&w=3', x[1].split(' - ')[2])
 
 ### Special characters
-Within brackets only some special characters are considered as so and thus should be escaped: '#'  ']'  '-'
+Within brackets only some special characters are considered as so and thus should be escaped also within brackets: '#'  ']'  '-'
 
 #################### python ####################
 # if a variable in list
