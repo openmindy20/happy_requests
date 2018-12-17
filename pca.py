@@ -28,6 +28,9 @@ eig_vals, eig_vecs = np.linalg.eig(corr_df)
 # We plot the instances of the dataset on the EigenVectors
 df = df.dot(eig_vecs)
 
+# We can then take the first few Principal Components of the DataFrame
+df = df.iloc[:,0:2]
+
 # The equivalent on Scikit Learn
 '''
 transformer = PCA(n_components=2)
