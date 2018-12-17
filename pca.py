@@ -25,7 +25,7 @@ corr_df = pd.DataFrame(data = df).corr()
 # We Calculate the EigenVectors and EigenValues of the Correlation Matrix
 eig_vals, eig_vecs = np.linalg.eig(corr_df)
 
-# We make sure to sort the EigenVectors in descending order of EigenValues
+# We make sure to sort the EigenVectors in descending order of the EigenValues
 
 # We plot the instances of the dataset on the EigenVectors
 df = df.dot(eig_vecs)
