@@ -1,10 +1,8 @@
-# The eigenvector with the largest eigenvalue is the direction along which the data set has the maximum variance.
-
-# If we want for example to reduce a dataset to just one dimension. In genral, this means picking a unit vector u, and replacing each data point, xi, with its projection along this vector uTxi.
+# The Eigenvector With the Largest Wigenvalue is the Direction Along Which the Data Set has the Maximum Variance.
 
 # When apply PCA on the dataset, the predictors become independent. This for example fulfill the assumption of the Linear Regression.
 
-# The EigenVectors are always perpendicular to one another.
+# The EigenVectors are Always Perpendicular to One Another.
 
 import matplotlib.pyplot as plt
 import seaborn as sns
