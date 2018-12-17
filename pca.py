@@ -2,6 +2,10 @@
 
 # If we want for example to reduce a dataset to just one dimension. In genral, this means picking a unit vector u, and replacing each data point, xi, with its projection along this vector uTxi.
 
+# When apply PCA on the dataset, the predictors become independent. This for example fulfill the assumption of the Linear Regression.
+
+# The EigenVectors are always perpendicular to one another.
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -30,7 +34,7 @@ eig_vals, eig_vecs = np.linalg.eig(corr_df)
 # We plot the instances of the dataset on the EigenVectors
 df = df.dot(eig_vecs)
 
-# We can then take the first few Principal Components of the DataFrame
+# We can then take the first variables of the dataset (We can take for example the first variables that explain 80% of the variation)
 df = df.iloc[:,0:2]
 
 # The equivalent on Scikit Learn
@@ -40,9 +44,6 @@ df = transformer.fit_transform(df)
 '''
 
 df
-
-
-
 
 
 
