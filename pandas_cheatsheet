@@ -8,3 +8,6 @@ df_2 = df_2[df_2.county.isin(['uppsala','halland'])==False]
 
 ######### pandas options ########
 pd.options.display.float_format = '{:.4f}'.format
+
+######### grouping by ########
+df = df.groupby('county', as_index=False).agg({"number_sessions": "sum"})
